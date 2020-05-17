@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     title: `코딩으로 불태훈다🔥`,
@@ -11,6 +12,12 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+  
+  // styled-components
+  plugins: [
+    `gatsby-plugin-styled-components`,
+  ],
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
