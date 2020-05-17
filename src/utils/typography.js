@@ -18,6 +18,8 @@ if (process.env.NODE_ENV !== `production`) {
   typography.injectStyles()
 }
 
+// export const rhythm = typography.rhythm
+// export const scale = typography.scale << 이 둘은 그냥 비구조화 할당해줘도 될 것 같은디,,,?
+export const { rhythm, scale } = typography
+
 export default typography
-export const rhythm = typography.rhythm
-export const scale = typography.scale

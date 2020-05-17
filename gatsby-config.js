@@ -8,9 +8,7 @@ module.exports = {
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    // 여기에 소셜 (insta, github) 추후에 입력해서 쓰자)
   },
   
   // styled-components

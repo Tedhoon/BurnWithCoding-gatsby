@@ -1,4 +1,3 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
@@ -7,13 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import styled from "styled-components"
-
-const StyledTest = styled.div`
-width:100px;
-height:100px;
-border: 1px solid red;
-`
 
 type Data = {
   site: {
@@ -45,7 +37,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <StyledTest>테스트용 박스</StyledTest>
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
